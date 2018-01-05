@@ -91,8 +91,8 @@ cc_library_shared {
     },
 
      product_variables: {
-        qcom_bsp_legacy: {
-            cflags: ["-DQCOM_BSP_LEGACY"],
+        uses_qcom_bsp_legacy: {
+            cppflags: ["-DQCOM_BSP_LEGACY"],
         },
         uses_media_extensions: {
             cflags: ["-DUSES_MEDIA_EXTENSIONS"],
